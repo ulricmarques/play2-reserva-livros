@@ -1,0 +1,1 @@
+activator debug run

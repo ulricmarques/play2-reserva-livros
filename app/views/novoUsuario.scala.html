@@ -1,0 +1,48 @@
+@(usuarioForm : Form[Usuario])
+
+@main("Novo usuário") {
+
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+      </div>
+      <div>
+      @helper.form(action=routes.UserCRUD.gravar()) {
+      <form class="form-horizontal">
+		<fieldset>
+
+		<legend>Novo usuário</legend>
+
+		<div class="control-group">
+		  <div class="controls">
+		    @helper.inputText(usuarioForm("email"))
+		    <p class="help-block">Informe o email</p>
+		  </div>
+		</div>
+		
+		<div class="control-group">
+		  <div class="controls">
+		    @helper.inputText(usuarioForm("name"))
+		    <p class="help-block">Informe o nome de usuário</p>
+		  </div>
+		</div>
+		
+		<div class="control-group">
+		  <div class="controls">
+		    @helper.inputText(usuarioForm("password"))
+		    <p class="help-block">Informe a senha</p>
+		  </div>
+		</div>
+		}
+
+		<div class="control-group">
+		  <label class="control-label" for="singlebutton"></label>
+		  <div class="controls">
+		    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Gravar</button>
+		  </div>
+		</div>
+
+      </div>
+}

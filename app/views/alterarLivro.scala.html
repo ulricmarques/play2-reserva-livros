@@ -1,0 +1,50 @@
+@(id: Long, livroForm: Form[Livro])
+
+@import helper._
+
+@main("Alterar livro") {
+
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+      </div>
+      
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/reserva/novo">Reservar</a></li>
+        </ul>
+      </div>
+
+    <h1>Alterar livro</h1>
+
+    @form(routes.LivroCRUD.alterar(id)) {
+
+     <fieldset>@inputText(livroForm("titulo"), '_label -> "Título")</fieldset>
+     <fieldset>@inputText(livroForm("autor"), '_label -> "Autor")</fieldset>
+     <fieldset>@inputText(livroForm("editora"), '_label -> "Editora")</fieldset>
+     <fieldset>@inputText(livroForm("ano"), '_label -> "Ano")</fieldset>
+     <fieldset>@inputText(livroForm("edicao"), '_label -> "Edição")</fieldset>
+     <fieldset>@inputText(livroForm("genero"), '_label -> "Gênero")</fieldset>
+
+      <div class="control-group">
+        <div class="actions">
+
+            <input type="submit" value="Gravar" class="btn btn-primary">
+
+            <a href="@routes.LivroCRUD.lista()" class="btn btn-primary ">Cancelar</a>
+
+    }
+
+    @form(routes.LivroCRUD.remover(id)) {
+            <input type="submit" value="Remover esse livro" class="btn danger">
+    }
+
+        </div>
+      </div>
+
+</div>
+
+}

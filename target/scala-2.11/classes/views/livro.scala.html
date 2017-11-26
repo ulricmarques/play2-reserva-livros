@@ -1,0 +1,26 @@
+@(livros: List[Livro])(livro: String)
+
+@main("Livros") {
+
+    <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+	      <li class="active"><a href="@routes.LivroCRUD.novoLivro()">Novo livro</a></li>
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+        <h2 class="text-muted">Bem-vindo! </h2>
+        <h3 class="text-muted">Livros </h3>
+      </div>
+     <table class="table table-striped table-bordered" id="example" cellpadding="0" cellspacing="0" border="0" width="100%">
+	    <tfoot>
+	      @for(livro <- livros) {
+	        <tr>
+	            <th><a href="@routes.LivroCRUD.detalhar(livro.id)">@livro.titulo</a></th>
+	            
+	        </tr>
+	             }
+	    </tfoot>
+	   </table>
+      </div>
+
+}

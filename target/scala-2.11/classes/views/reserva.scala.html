@@ -1,0 +1,26 @@
+@(reservas: List[Reserva])(reserva: String)
+
+@main("Reservas") {
+
+    <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+	      <li class="active"><a href="@routes.ReservaCRUD.novoReserva()">Nova reserva</a></li>
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+        <h2 class="text-muted">Bem-vindo! </h2>
+        <h3 class="text-muted">Reservas </h3>
+      </div>
+     <table class="table table-striped table-bordered" id="example" cellpadding="0" cellspacing="0" border="0" width="100%">
+	    <tfoot>
+	      @for(reserva <- reservas) {
+	        <tr>
+	            <th><a href="@routes.ReservaCRUD.detalhar(reserva.id)">@reserva.dataReserva</a></th>
+	            
+	        </tr>
+	             }
+	    </tfoot>
+	   </table>
+      </div>
+
+}

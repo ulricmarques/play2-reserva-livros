@@ -1,0 +1,47 @@
+# Routes
+
+# Home page
+# GET     /                               controllers.Application.index()
+#GET     /                                    controllers.Inicio.index()
+GET     /inicio                                    controllers.Inicio.index()
+GET     /                                    controllers.Application.login()
+GET     /sobre                          controllers.Application.sobre()
+GET     /play                             controllers.Application.index()
+
+GET     /login                              controllers.Application.login()
+POST    /login                              controllers.Application.authenticate()
+GET     /logout                             controllers.Application.logout()
+
+GET     /reserva                         controllers.ReservaCRUD.lista()
+GET     /reserva/novo               controllers.ReservaCRUD.novoReserva()
+GET     /reserva/:id                   controllers.ReservaCRUD.detalhar(id: Long)
+POST   /reserva/:id                   controllers.ReservaCRUD.alterar(id:Long)
+POST   /reserva/                        controllers.ReservaCRUD.gravar()
+POST   /reserva/:id/remover   controllers.ReservaCRUD.remover(id:Long)
+
+GET     /livro                         controllers.LivroCRUD.lista()
+GET     /livro/novo               controllers.LivroCRUD.novoLivro()
+GET     /livro/:id                   controllers.LivroCRUD.detalhar(id: Long)
+POST   /livro/:id                   controllers.LivroCRUD.alterar(id:Long)
+POST   /livro/                        controllers.LivroCRUD.gravar()
+POST   /livro/:id/remover   controllers.LivroCRUD.remover(id:Long)
+
+
+GET     /usuario                         controllers.UserCRUD.lista()
+GET     /usuario/novo               controllers.UserCRUD.novoUsuario()
+GET     /usuario/:id                   controllers.UserCRUD.detalhar(id: Long)
+POST   /usuario/:id                   controllers.UserCRUD.alterar(id:Long)
+POST   /usuario/                        controllers.UserCRUD.gravar()
+POST   /usuario/:id/remover   controllers.UserCRUD.remover(id:Long)
+
+
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Secure Social
+# User Registration and password handling
+->          /auth                             securesocial.Routes

@@ -1,0 +1,39 @@
+@(id: Long, usuarioForm: Form[Usuario])
+
+@import helper._
+
+@main("Alterar usuário") {
+
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+      </div>
+
+    <h1>Alterar usuário</h1>
+
+    @form(routes.UserCRUD.alterar(id)) {
+
+     <fieldset>@inputText(usuarioForm("nome"), '_label -> "Login")</fieldset>
+     <fieldset>@inputPassword(usuarioForm("senha"), '_label -> "Senha")</fieldset>
+
+      <div class="control-group">
+        <div class="actions">
+
+            <input type="submit" value="Gravar" class="btn btn-primary">
+
+            <a href="@routes.UserCRUD.lista()" class="btn btn-primary ">Cancelar</a>
+
+    }
+
+    @form(routes.UserCRUD.remover(id)) {
+            <input type="submit" value="Remover esse usuário" class="btn danger">
+    }
+
+        </div>
+      </div>
+
+</div>
+
+}

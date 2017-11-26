@@ -1,0 +1,13 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\application.conf,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\evolutions,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\generated.keystore,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\generated.keystore)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\heroku.conf,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\heroku.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\messages.pt,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\messages.pt)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\play.plugins,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\play.plugins)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\routes,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\securesocial.conf,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\securesocial.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\testes.conf,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\testes.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\evolutions\default,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\evolutions\play.plugins,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\evolutions\play.plugins)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ulric\Desktop\play2-casadocodigo-master\conf\evolutions\default\1.sql,C:\Users\Ulric\Desktop\play2-casadocodigo-master\target\scala-2.11\classes\evolutions\default\1.sql)[0m

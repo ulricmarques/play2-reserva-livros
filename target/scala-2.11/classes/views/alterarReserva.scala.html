@@ -1,0 +1,47 @@
+@(id: Long, reservaForm: Form[Reserva])
+
+@import helper._
+
+@main("Alterar reserva") {
+
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/inicio">Home</a></li>
+        </ul>
+      </div>
+      
+   <div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/">Reservar</a></li>
+        </ul>
+      </div>
+
+    <h1>Alterar reserva</h1>
+
+    @form(routes.ReservaCRUD.alterar(id)) {
+
+     <fieldset>@inputText(reservaForm("user"), '_label -> "Usuário")</fieldset>
+     <fieldset>@inputText(reservaForm("dataReserva"), '_label -> "Data de Reserva")</fieldset>
+     <fieldset>@inputText(reservaForm("datadevolucao"), '_label -> "Data de Devolução")</fieldset>
+     
+      <div class="control-group">
+        <div class="actions">
+
+            <input type="submit" value="Gravar" class="btn btn-primary">
+
+            <a href="@routes.ReservaCRUD.lista()" class="btn btn-primary ">Cancelar</a>
+
+    }
+
+    @form(routes.ReservaCRUD.remover(id)) {
+            <input type="submit" value="Remover esse reserva" class="btn danger">
+    }
+
+        </div>
+      </div>
+
+</div>
+
+}

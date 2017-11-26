@@ -1,0 +1,10 @@
+eclipse
+run
+eclipse
+clean-all
+activator clean-all
+clean
+run
+activator clean-files
+clean-files
+run
